@@ -78,7 +78,7 @@ Catatan: Hapus tanda panah komentar ini nanti jika gambar wajah heatmap sudah An
 ### 1. Environment Setup
 Clone the repository and install the required dependencies:
 ```bash
-git clone [https://github.com/FebrioDw/Deepfake_Detection.git](https://github.com/FebrioDw/Deepfake_Detection.git)
+git clone https://github.com/FebrioDw/Deepfake_Detection.git
 cd Deepfake_Detection
 pip install -r requirements.txt
 ```
