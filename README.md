@@ -29,7 +29,7 @@ Portofolio-Deepfake-Detection/
 │   ├── train_resnet.py         # Standard ResNet50 training
 │   ├── train_mobilenet.py      # Edge-optimized lightweight model
 │   ├── train_mesonet.py        # Custom Deepfake-specific architecture
-│   ├── evaluaate_model.py       # Automated metric computation & graphing
+│   ├── evaluate_model.py       # Automated metric computation & graphing
 │   └── visualization_gradcam.py  # XAI Heatmap generation
 ├── requirements.txt            # Python dependencies
 └── README.md                   # Project documentation
