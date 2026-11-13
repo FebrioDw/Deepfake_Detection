@@ -1,0 +1,66 @@
+.card {
+  background: var(--color-surface);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.modelCard {
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px 10px;
+  text-align: center;
+  background: var(--color-surface);
+  transition: border-color 0.15s, background 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.modelCard:hover {
+  border-color: var(--color-primary);
+  background: #FAFAF9;
+}
+
+.active {
+  border: 2px solid var(--color-primary) !important;
+  background: var(--color-primary-bg) !important;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.active .name {
+  color: var(--color-primary-dark);
+}
+
+.desc {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.active .desc {
+  color: var(--color-primary);
+}
+
+.params {
+  font-size: 10px;
+  color: var(--color-text-hint);
+  margin-top: 2px;
+}
+
+.active .params {
+  color: var(--color-primary);
+  opacity: 0.7;
+}

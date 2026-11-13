@@ -1,0 +1,44 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary:      #534AB7;
+  --color-primary-dark: #3C3489;
+  --color-primary-bg:   #EEEDFE;
+  --color-fake:         #A32D2D;
+  --color-fake-bg:      #FCEBEB;
+  --color-real:         #3B6D11;
+  --color-real-bg:      #EAF3DE;
+  --color-warning:      #BA7517;
+  --color-warning-bg:   #FAEEDA;
+  --color-border:       rgba(0,0,0,0.1);
+  --color-bg:           #F8F8F6;
+  --color-surface:      #FFFFFF;
+  --color-text:         #1a1a1a;
+  --color-text-muted:   #6B6B6B;
+  --color-text-hint:    #9E9E9E;
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  14px;
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.06);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+img { max-width: 100%; display: block; }

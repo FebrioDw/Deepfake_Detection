@@ -1,0 +1,8 @@
+# Environments
+.venv/
+node_modules/
+__pycache__/
+
+# Large model weights
+**/*.keras
+**/models/

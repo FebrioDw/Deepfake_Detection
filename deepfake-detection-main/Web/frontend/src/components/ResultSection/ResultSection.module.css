@@ -1,0 +1,277 @@
+.wrapper { display: flex; flex-direction: column; gap: 16px; }
+
+.resultHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.resultTitle {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.verdictBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 14px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.fake { background: var(--color-fake-bg); color: var(--color-fake); }
+.real { background: var(--color-real-bg); color: var(--color-real); }
+
+.btnReset {
+  padding: 6px 14px;
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s;
+  font-family: inherit;
+}
+
+.btnReset:hover { background: #F1EFE8; }
+
+.modelInfo {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  padding: 8px 14px;
+  background: var(--color-primary-bg);
+  border-radius: var(--radius-md);
+  border: 0.5px solid rgba(83,74,183,0.15);
+}
+
+.modelInfo strong { color: var(--color-primary); }
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.metricCard {
+  background: #F8F8F6;
+  border-radius: var(--radius-md);
+  padding: 14px 12px;
+  text-align: center;
+}
+
+.metricVal {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.metricLbl {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+
+.cardLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-hint);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 14px;
+}
+
+.progressRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 9px;
+}
+
+.progressLabel {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  width: 58px;
+  flex-shrink: 0;
+}
+
+.progressBg {
+  flex: 1;
+  height: 6px;
+  background: #F1EFE8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.progressVal {
+  font-size: 12px;
+  font-weight: 500;
+  width: 36px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.framesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.frameItem {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 0.5px solid var(--color-border);
+}
+
+.frameImg {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.framePlaceholder {
+  aspect-ratio: 1;
+  background: #F8F8F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.framePlaceholderText {
+  font-size: 10px;
+  color: var(--color-text-hint);
+}
+
+.frameBadge {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  font-size: 9px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+.badgeFake { background: var(--color-fake-bg); color: var(--color-fake); }
+.badgeReal { background: var(--color-real-bg); color: var(--color-real); }
+
+.gradcamDesc {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.gradcamBlock { margin-bottom: 20px; }
+.gradcamBlock:last-child { margin-bottom: 0; }
+
+.gradcamMeta {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
+
+.gradcamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.gradcamItem {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 0.5px solid var(--color-border);
+}
+
+.gradcamImg {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.gradcamCaption {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 6px 8px;
+  border-top: 0.5px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+/* ── VIDEO INFORMATION — perbaikan layout ── */
+.infoGrid {
+  display: grid;
+  /* 4 kolom: key1 | val1 | key2 | val2 */
+  /* gap antar kolom memberi jarak yang cukup */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 0;
+  column-gap: 0;
+}
+
+.infoItem {
+  /* Setiap item menempati 2 kolom (key + value) */
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+  padding: 9px 12px 9px 0;
+  border-bottom: 0.5px solid var(--color-border);
+}
+
+/* Pasangkan item kiri dan kanan dalam satu baris */
+.infoItem:nth-child(odd) {
+  padding-right: 24px;
+  border-right: 0.5px solid var(--color-border);
+}
+
+.infoItem:nth-child(even) {
+  padding-left: 24px;
+  padding-right: 0;
+}
+
+/* Hapus border bawah pada 2 item terakhir */
+.infoItem:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+.infoKey {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.infoVal {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text);
+  text-align: right;
+}

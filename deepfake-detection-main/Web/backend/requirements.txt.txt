@@ -1,0 +1,25 @@
+# ============================================================
+# requirements.txt — Backend FastAPI
+# Deepfake Detection Website
+# Python 3.10.11 | TensorFlow 2.16.1 | Keras 3.x
+# ============================================================
+
+# Web Framework
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+
+# Deep Learning
+tensorflow-cpu==2.16.1
+
+# Numerik
+numpy==1.26.4
+
+# Computer Vision
+opencv-python==4.8.1.78
+Pillow==10.2.0
+
+# Face Detection
+torch==2.2.2
+torchvision==0.17.2
+facenet-pytorch==2.5.3

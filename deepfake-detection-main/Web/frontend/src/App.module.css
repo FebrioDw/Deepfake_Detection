@@ -1,0 +1,125 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  text-align: center;
+  padding: 48px 24px 32px;
+  border-bottom: 0.5px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.heroTitle {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.heroDesc {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  max-width: 440px;
+  margin: 0 auto 14px;
+  line-height: 1.7;
+}
+
+.modelBadge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: var(--color-primary-bg);
+  border: 1px solid rgba(83, 74, 183, 0.2);
+  border-radius: 20px;
+  font-size: 12px;
+  color: var(--color-primary);
+}
+
+.modelBadge strong {
+  font-weight: 600;
+}
+
+.main {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+  width: 100%;
+  flex: 1;
+}
+
+.stepLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-hint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.btnRun {
+  width: 100%;
+  padding: 13px;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.15s, opacity 0.15s;
+  cursor: pointer;
+}
+
+.btnRun:hover:not(:disabled) {
+  background: var(--color-primary-dark);
+}
+
+.btnRun:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.errorBox {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: var(--color-fake-bg);
+  color: var(--color-fake);
+  border-radius: var(--radius-md);
+  border: 0.5px solid rgba(163,45,45,0.2);
+  font-size: 13px;
+}
+
+.divider {
+  border: none;
+  border-top: 0.5px solid var(--color-border);
+  margin: 28px 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 0.5px solid var(--color-border);
+  font-size: 12px;
+  color: var(--color-text-hint);
+  background: var(--color-surface);
+}
